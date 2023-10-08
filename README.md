@@ -25,8 +25,8 @@
 
 ## 环境要求
 - Java 11或更高版本
-- Apache Kafka
-- Spring Boot
+- Apache Kafka 3.5.0
+- Spring Boot 2.7.6
 
 ## 使用方法
 - 启动Apache Kafka服务
