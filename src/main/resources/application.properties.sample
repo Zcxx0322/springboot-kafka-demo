@@ -1,0 +1,11 @@
+# 生产者配置
+spring.kafka.producer.bootstrap-servers=localhost:9092
+spring.kafka.producer.id=num1
+spring.kafka.producer.default-topic=test-topic
+
+# 消费者配置
+spring.kafka.consumer.bootstrap-servers=${spring.kafka.producer.bootstrap-servers}
+spring.kafka.consumer.group-id=consumer_group
+spring.kafka.consumer.enable-auto-commit=true
+spring.kafka.consumer.auto-offset-reset=latest
+kafka.consumer.topic=${spring.kafka.producer.default-topic}
