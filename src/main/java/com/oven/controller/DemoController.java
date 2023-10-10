@@ -16,7 +16,7 @@ public class DemoController {
     @RequestMapping("/send")
     public String send(@RequestParam String msg) {
         String timestamp = new Date().toString();
-        String response = String.format("{\n  \"producerId\" : \"%s\",\n  \"message\" : \"%s\",\n  \"timestamp\" : \"%s\",\n  \"topic\" : \"%s\"\n}",
+        String response = String.format("发送消息成功：\n{\n  \"producerId\" : \"%s\",\n  \"message\" : \"%s\",\n  \"timestamp\" : \"%s\",\n  \"topic\" : \"%s\"\n}\n",
                 producer.getProducerId(), msg, timestamp, producer.getDefaultTopic());
 
         // 发送消息到Kafka

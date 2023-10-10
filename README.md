@@ -44,6 +44,7 @@ curl -X POST http://localhost:8080/send?msg=HelloWorld
 - 你会得到以下输出
 ```
 $ curl -X POST http://localhost:8080/send?msg=HelloWorld
+发送消息成功：
 {
   "producerId" : "num1",
   "message" : "HelloWorld",
