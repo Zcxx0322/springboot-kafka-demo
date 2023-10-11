@@ -20,7 +20,7 @@
     │   │       └── application.properties   <-- 应用程序配置文件
     └── pom.xml                 <-- Maven项目配置文件
 ## 特性
-- 使用Spring Kafka集成发送和接收消息
+- 使用SpringBoot集成Kafka发送和接收消息
 - 将消息内容格式化为JSON
 
 ## 环境要求
@@ -54,7 +54,8 @@ $ curl -X POST http://localhost:8080/send?msg=HelloWorld
 ```
 - SpringBoot端会返回以下内容
 ```
-消费者接受到消息:{
+消费者接收到消息:
+{
   "producerId" : "num1",
   "message" : "HelloWorld",
   "timestamp" : "Mon Oct 09 02:32:08 CST 2023",

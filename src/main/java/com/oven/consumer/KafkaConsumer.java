@@ -9,6 +9,6 @@ public class KafkaConsumer {
 
     @KafkaListener(topics = "${kafka.consumer.topic}")
     public void consumer(String message) {
-        System.out.printf("消费者接受到消息：%s", message);
+        System.out.printf("消费者接受到消息：\n%s\n", message);
     }
 }
